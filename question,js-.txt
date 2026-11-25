@@ -1,0 +1,258 @@
+document.addEventListener("DOMContentLoaded", () => {
+
+    // =====================================
+    // G12 ECONOMICS - ELASTICITY OF DEMAND
+    // TOTAL: 100 MARKS
+    // =====================================
+
+    // SECTION A: TRUE / FALSE (30 MARKS)
+
+    const truefalse = [
+        ["",],
+
+
+
+    ];
+
+    // SECTION B: FILL IN THE BLANKS (30 MARKS)
+
+    const blanks = [
+        ["", [""]],
+
+      
+    ];
+
+    // SECTION C: MULTIPLE CHOICE (30 MARKS)
+    // Correct answer index: 0, 1, 2, 3
+
+    const choose = [
+        ["", ["", "", "", ""], 0],
+  
+
+    ];
+
+    // SECTION D: DEFINITIONS (10 MARKS)
+
+    const definitions = [
+        ["", [""]],
+    
+    ];
+
+    const tfBox = document.getElementById("truefalse");
+    const blankBox = document.getElementById("blank");
+    const chooseBox = document.getElementById("choose");
+    const definitionBox = document.getElementById("definitions");
+
+    if (!tfBox || !blankBox || !chooseBox || !definitionBox) {
+        console.error("Quiz HTML IDs မကိုက်ညီပါ။");
+        return;
+    }
+
+    // RENDER TRUE / FALSE
+
+    truefalse.forEach((q, i) => {
+        tfBox.insertAdjacentHTML("beforeend", `
+            <div class="question">
+                <p>${i + 1}. ${q[0]}</p>
+                <label>
+                    <input type="radio" name="tf${i}" value="true">
+                    မှန်
+                </label>
+                <label>
+                    <input type="radio" name="tf${i}" value="false">
+                    မှား
+                </label>
+                <span class="feedback" id="tfFeedback${i}"></span>
+            </div>
+        `);
+    });
+
+    // RENDER BLANKS
+
+    blanks.forEach((q, i) => {
+        blankBox.insertAdjacentHTML("beforeend", `
+            <div class="question">
+                <p>${i + 1}. ${q[0]}</p>
+                <input type="text" id="blank${i}" placeholder="အဖြေရေးပါ">
+                <span class="feedback" id="blankFeedback${i}"></span>
+            </div>
+        `);
+    });
+
+    // RENDER CHOOSE
+
+    choose.forEach((q, i) => {
+        let html = `
+            <div class="question">
+                <p>${i + 1}. ${q[0]}</p>
+        `;
+
+        q[1].forEach((option, j) => {
+            html += `
+                <label>
+                    <input type="radio" name="choose${i}" value="${j}">
+                    ${["က", "ခ", "ဂ", "ဃ"][j]}. ${option}
+                </label>
+            `;
+        });
+
+        html += `<span class="feedback" id="chooseFeedback${i}"></span></div>`;
+        chooseBox.insertAdjacentHTML("beforeend", html);
+    });
+
+    // RENDER DEFINITIONS
+
+    definitions.forEach((q, i) => {
+        definitionBox.insertAdjacentHTML("beforeend", `
+            <div class="question">
+                <p>${i + 1}. "${q[0]}" ၏ အဓိပ္ပာယ်ကို ရေးပါ။</p>
+                <textarea id="definition${i}" rows="3" placeholder="အဓိပ္ပာယ်ရေးပါ"></textarea>
+                <span class="feedback" id="definitionFeedback${i}"></span>
+            </div>
+        `);
+    });
+
+    // NORMALIZE ANSWERS
+
+    function normalize(value) {
+        return String(value)
+            .toLowerCase()
+            .replace(/[၊။၊:;!?()[\]{}"'“”‘’\-–—]/g, "")
+            .replace(/\s+/g, "")
+            .trim();
+    }
+
+    // CHECK ANSWERS
+
+    document.getElementById("checkAnswers").addEventListener("click", () => {
+
+        let total = 0;
+        let answered = 0;
+
+        // TRUE / FALSE
+
+        truefalse.forEach((q, i) => {
+            const selected = document.querySelector(`input[name="tf${i}"]:checked`);
+            const feedback = document.getElementById(`tfFeedback${i}`);
+
+            if (selected) {
+                answered++;
+
+                if (selected.value === String(q[1])) {
+                    total++;
+                    feedback.textContent = "✓ မှန်ကန်ပါသည်";
+                    feedback.style.color = "green";
+                } else {
+                    feedback.textContent = "✗ မှားနေပါသည်";
+                    feedback.style.color = "red";
+                }
+            } else {
+                feedback.textContent = "အဖြေမဖြေထားပါ";
+                feedback.style.color = "orange";
+            }
+        });
+
+        // BLANKS
+
+        blanks.forEach((q, i) => {
+            const input = document.getElementById(`blank${i}`);
+            const feedback = document.getElementById(`blankFeedback${i}`);
+            const answer = normalize(input.value);
+
+            if (input.value.trim()) {
+                answered++;
+
+                const correct = q[1].some(a => normalize(a) === answer);
+
+                if (correct) {
+                    total++;
+                    feedback.textContent = "✓ မှန်ကန်ပါသည်";
+                    feedback.style.color = "green";
+                } else {
+                    feedback.textContent = "✗ မှားနေပါသည်";
+                    feedback.style.color = "red";
+                }
+            } else {
+                feedback.textContent = "အဖြေမဖြေထားပါ";
+                feedback.style.color = "orange";
+            }
+        });
+
+        // CHOOSE
+
+        choose.forEach((q, i) => {
+            const selected = document.querySelector(`input[name="choose${i}"]:checked`);
+            const feedback = document.getElementById(`chooseFeedback${i}`);
+
+            if (selected) {
+                answered++;
+
+                if (Number(selected.value) === q[2]) {
+                    total++;
+                    feedback.textContent = "✓ မှန်ကန်ပါသည်";
+                    feedback.style.color = "green";
+                } else {
+                    feedback.textContent = "✗ မှားနေပါသည်";
+                    feedback.style.color = "red";
+                }
+            } else {
+                feedback.textContent = "အဖြေမဖြေထားပါ";
+                feedback.style.color = "orange";
+            }
+        });
+
+        // DEFINITIONS
+
+        definitions.forEach((q, i) => {
+            const input = document.getElementById(`definition${i}`);
+            const feedback = document.getElementById(`definitionFeedback${i}`);
+            const answer = normalize(input.value);
+
+            if (input.value.trim()) {
+                answered++;
+
+                const correct = q[1].some(a => {
+                    const expected = normalize(a);
+                    return answer === expected ||
+                        (answer.length >= expected.length * 0.7 &&
+                            expected.includes(answer));
+                });
+
+                if (correct) {
+                    total++;
+                    feedback.textContent = "✓ မှန်ကန်ပါသည်";
+                    feedback.style.color = "green";
+                } else {
+                    feedback.textContent = "✗ မူရင်းအဓိပ္ပာယ်နှင့် မကိုက်ညီပါ";
+                    feedback.style.color = "red";
+                }
+            } else {
+                feedback.textContent = "အဖြေမဖြေထားပါ";
+                feedback.style.color = "orange";
+            }
+        });
+
+        const score = document.getElementById("score");
+        score.textContent = `ရမှတ်: ${total} / 100 | ဖြေဆိုထားသောမေးခွန်း: ${answered} / 100`;
+    });
+
+    // CLEAR ANSWERS
+
+    document.getElementById("clearAnswers").addEventListener("click", () => {
+
+        document.querySelectorAll(
+            '#truefalse input[type="radio"], #choose input[type="radio"]'
+        ).forEach(input => input.checked = false);
+
+        document.querySelectorAll(
+            '#initial input[type="text"], #grammar textarea'
+        ).forEach(input => input.value = "");
+
+        document.querySelectorAll(".feedback").forEach(feedback => {
+            feedback.textContent = "";
+        });
+
+        document.getElementById("score").textContent = "";
+    });
+
+});

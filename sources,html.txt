@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="my">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#080f20">
+    <title>Sources | Videos & Photos</title>
+  
+</head>
+
+<body>
+
+    <header class="header">
+   "
+
+
+
+            <span class="logo-text">MCF <small>Grade 12 Biology</small></span>
+        </a>
+        <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false">☰</button>
+
+        <nav class="nav-links" aria-label="Main navigation">
+            <a href="index.html" data-page="index.html"> Home</a>
+            <a href="lesson.html" data-page="lesson.html"> Lesson</a>
+            <a href="questions.html" data-page="questions.html"> Questions</a>
+            <a href="answer.html" data-page="answer.html">Answer</a>
+            <a href="letters.html" data-page="letters.html"> Letter</a>
+            <a href="contacts.html" data-page="contacts.html"> Contact</a>
+
+            <div class="dropdown">
+                <button class="drop-btn" id="resourceBtn" aria-expanded="false">☷ Resources</button>
+                <div class="dropdown-menu" id="resourceMenu">
+                    <div class="menu-column">
+                        <h3>STUDY</h3>
+                        <a href="purpose.html">Project purpose</a>
+                        <a href="lesson.html">Biology lessons</a>
+                    </div>
+                    <div class="menu-column">
+                        <h3>PRACTICE</h3>
+                        <a href="questions.html">Practice questions</a>
+                        <a href="answer.html">Answer guide</a>
+                    </div>
+                    <div class="menu-column">
+                        <h3>PROJECT</h3>
+                        <a href="sources.html">Videos & Photos</a>
+                        <a href="contacts.html">Contact</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container">
+
+        <section class="hero">
+            <h1>Videos & Photos</h1>
+            <p>Explore and view all videos and photos in one place.</p>
+        </section>
+
+        <div class="tabs" role="group" aria-label="Filter media">
+            <button class="tab active" data-type="all" aria-pressed="true">All</button>
+            <button class="tab" data-type="photo" aria-pressed="false">Photos</button>
+            <button class="tab" data-type="video" aria-pressed="false">Videos</button>
+        </div>
+
+        <section class="gallery" id="gallery">
+
+            <article class="media-card" data-type="photo">
+                <img src="" alt="Photo 1" class="media-image">
+                <div class="media-info">
+                    <h3>Photo 1</h3>
+                    <a href="i" target="_blank" rel="noopener" class="view-btn">View Photo</a>
+                </div>
+            </article>
+                 <article class="media-card" data-type="video">
+                <video controls preload="metadata" poster="images/video1-cover.jpg">
+                <source src="" type="video/mp4">
+                Your browser does not support video playback.
+            </video>
+                <div class="media-info">
+                    <h3>Video 1</h3>
+                    <a href="" target="_blank" rel="noopener" class="view-btn">Open Video</a>
+                </div>
+            </article>
+    </section>
+
+        <p id="empty-message" hidden>No media found in this category.</p>
+
+    </main>
+
+    <footer>
+        <p>G12 Biology Project | National Digital Award 2026</p>
+    </footer>
+   
+</body>
+
+</html>
