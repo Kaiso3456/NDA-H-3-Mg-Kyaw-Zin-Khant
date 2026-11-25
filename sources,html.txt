@@ -21,10 +21,10 @@
         <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false">☰</button>
 
         <nav class="nav-links" aria-label="Main navigation">
-            <a href="index.html" data-page="index.html"> Home</a>
+            <a href="index.html" data-page="index.html">Home</a>
             <a href="lesson.html" data-page="lesson.html"> Lesson</a>
-            <a href="questions.html" data-page="questions.html"> Questions</a>
-            <a href="answer.html" data-page="answer.html">Answer</a>
+            <a href="questions.html" data-page="questions.html">Questions</a>
+            <a href="answer.html" data-page="answer.html"> Answer</a>
             <a href="letters.html" data-page="letters.html"> Letter</a>
             <a href="contacts.html" data-page="contacts.html"> Contact</a>
 

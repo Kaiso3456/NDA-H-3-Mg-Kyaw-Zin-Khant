@@ -5,35 +5,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="theme-color" content="#080f20">
-    <title>Answer Guide - G12 Economics</title>
-
+    <title>Answer Guide - G12 English</title>
+    
+    
 </head>
 
 <body>
 
     <header class="header">
-    
-            <span class="logo-text">MCF <small>Grade 12 Economics</small></span>
+
+            <span class="logo-text">MCF <small>Grade 12 Biology</small></span>
         </a>
 
         <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false">☰</button>
 
         <nav class="nav-links" aria-label="Main navigation">
             <a href="index.html" data-page="index.html"> Home</a>
-            <a href="lesson.html" data-page="lesson.html">Lesson</a>
+            <a href="lesson.html" data-page="lesson.html"> Lesson</a>
             <a href="questions.html" data-page="questions.html">Questions</a>
-            <a href="answer.html" data-page="answer.html">Answer</a>
+            <a href="answer.html" data-page="answer.html"> Answer</a>
             <a href="letters.html" data-page="letters.html"> Letter</a>
             <a href="contacts.html" data-page="contacts.html"> Contact</a>
 
             <div class="dropdown">
-                <button class="drop-btn" id="resourceBtn" aria-expanded="false">☷ Resources</button>
+                <button class="drop-btn" id="resourceBtn" aria-expanded="false">☷ Resources ▾</button>
 
                 <div class="dropdown-menu" id="resourceMenu">
                     <div class="menu-column">
                         <h3>STUDY</h3>
                         <a href="purpose.html">Project purpose</a>
-                        <a href="lesson.html">Economics lessons</a>
+                        <a href="lesson.html">English lessons</a>
                     </div>
                     <div class="menu-column">
                         <h3>PRACTICE</h3>
@@ -64,9 +65,8 @@
 
             <ol class="answer-list">
                 <li></li>
-              
-                
-       
+               
+           
             </ol>
         </section>
 
@@ -76,11 +76,7 @@
 
             <ol class="answer-list">
                 <li></li>
-               
-         
-              
-          
-       
+                
             </ol>
         </section>
 
@@ -89,35 +85,24 @@
             <h2></h2>
 
             <ol class="answer-list">
-                <li></li>
-            
-            </ol>
-        </section>
-
-        <!-- SECTION D -->
-        <section class="panel">
-            <h2></h2>
-
-            <ol class="answer-list">
-                <li>
-                    <strong></strong><br>
-                </li>
-
                 
+            
+
+                <li></li>
             </ol>
         </section>
 
         <p class="notice">
-            
+             
         </p>
 
     </main>
 
     <footer>
-        <p>G12 Economics Project | National Digital Award 2026</p>
+        <p>G12 English Project | National Digital Award 2026</p>
     </footer>
 
-    
+  
 
 </body>
 

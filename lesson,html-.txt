@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>G12 Economics Lesson</title>
+    <title>G12 Biology Lesson</title>
 
  
 </head>
@@ -15,17 +15,18 @@
     <header class="header">
       
 
-            <span class="logo-text">MCF <small>Grade 12 Economics</small></span>
+
+            <span class="logo-text">MCF <small>Grade 12 Biology</small></span>
         </a>
         <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false">☰</button>
 
         <nav class="nav-links" aria-label="Main navigation">
-            <a href="index.html" data-page="index.html"> Home</a>
+            <a href="index.html" data-page="index.html">Home</a>
             <a href="lesson.html" data-page="lesson.html"> Lesson</a>
             <a href="questions.html" data-page="questions.html"> Questions</a>
-            <a href="answer.html" data-page="answer.html"> Answer</a>
+            <a href="answer.html" data-page="answer.html">Answer</a>
             <a href="letters.html" data-page="letters.html">Letter</a>
-            <a href="contacts.html" data-page="contacts.html">Contact</a>
+            <a href="contacts.html" data-page="contacts.html"> Contact</a>
 
             <div class="dropdown">
                 <button class="drop-btn" id="resourceBtn" aria-expanded="false">
@@ -36,7 +37,7 @@
                     <div class="menu-column">
                         <h3>STUDY</h3>
                         <a href="purpose.html">Project purpose</a>
-                        <a href="lesson.html">Economics lessons</a>
+                        <a href="lesson.html">English lessons</a>
                     </div>
 
                     <div class="menu-column">
@@ -64,7 +65,7 @@
 
             <h1></h1>
 
-            <p>Grade 12 Economics </p>
+            <p></p>
         </section>
 
         <!-- Section paragraph -->
@@ -72,242 +73,64 @@
 
             <h2></h2>
 
-            <p>
-
-                
-            </p>
-            <h2></h2>
-            <p>
-
-
-
-
-            </p>
-
-            <figure>
-                <img class="diagram" src="" alt="" onerror="this.style.display='none'">
-
-
-            </figure>
-            <p> </p>
-
-            <figure>
-                 <img class="diagram" src="" alt="" onerror="this.style.display='none'">
-
-
-            </figure>
-            <p></p>
-
-
-            <figure>
-
-               <img class="diagram" src="" alt="" onerror="this.style.display='none'">
-            </figure>
-
-            <p></p>
-            <figure>
-                 <img class="diagram" src="" alt="" onerror="this.style.display='none'">
-
-
-            </figure>
-            <p></p>
-        </section>
-
-        <!-- Section 3.2 -->
-        <section class="panel" id="section-3-2">
-
-            <h2></h2>
-
-
             <p></p>
 
             <ul>
                 <li></li>
-               
+              
 
-
-
-                        <ul>
-                            <li>
-                            </li>
-
-
-                        </ul>
-
-                        <figure>
-                             <img class="diagram" src="" alt="" onerror="this.style.display='none'">
-
-                        </figure>
-                        <figure>
-                             <img class="diagram" src="" alt="" onerror="this.style.display='none'">
-
-                        </figure>
-                        <figure>
-                           <img class="diagram" src="" alt="" onerror="this.style.display='none'">
-
-                        </figure>
-
-
-                        </figure>
-                        <figure>
-                             <img class="diagram" src="" alt="" onerror="this.style.display='none'">
-
-                        </figure>
-
-                        <p>
-</p>
-        </section>
-
-        <!-- Section 3.3 -->
-        <section class="panel" id="section-3-3">
-
-
-         <figure>
-                             <img class="diagram" src="" alt="" onerror="this.style.display='none'">
-
-                        </figure>
-                        <figure>
-                           <img class="diagram" src="" alt="" onerror="this.style.display='none'">
-
-                        </figure>
-
-
-                        </figure>
-                        <figure>
-                             <img class="diagram" src="" alt="" onerror="this.style.display='none'">
-
-                        </figure>
-            <!-- Section 3.3 -->
-            <section class="panel" id="section-3-3">
-
-
-           <figure>
-                             <img class="diagram" src="" alt="" onerror="this.style.display='none'">
-
-                        </figure>
-                        <figure>
-                           <img class="diagram" src="" alt="" onerror="this.style.display='none'">
-
-                        </figure>
-
-
-                        </figure>
-                        <figure>
-                             <img class="diagram" src="" alt="" onerror="this.style.display='none'">
-
-                        </figure>
-            </section>
-            <!-- Section 3.3 -->
-            <section class="panel" id="section-3-3">
-
-
-           <figure>
-                             <img class="diagram" src="" alt="" onerror="this.style.display='none'">
-
-                        </figure>
-                        <figure>
-                           <img class="diagram" src="" alt="" onerror="this.style.display='none'">
-
-                        </figure>
-
-
-                        </figure>
-                        <figure>
-                             <img class="diagram" src="" alt="" onerror="this.style.display='none'">
-
-                        </figure>
-            </section>
-            <!-- Section 3.3 -->
-            <section class="panel" id="section-3-3">
-
-
-               <figure>
-                             <img class="diagram" src="" alt="" onerror="this.style.display='none'">
-
-                        </figure>
-                        <figure>
-                           <img class="diagram" src="" alt="" onerror="this.style.display='none'">
-
-                        </figure>
-
-
-                        </figure>
-                        <figure>
-                             <img class="diagram" src="" alt="" onerror="this.style.display='none'">
-
-                        </figure>
-            </section>
-            <!-- Section 3.3 -->
-            <section class="panel" id="section-3-3">
-
-   <figure>
-                             <img class="diagram" src="" alt="" onerror="this.style.display='none'">
-
-                        </figure>
-                        <figure>
-                           <img class="diagram" src="" alt="" onerror="this.style.display='none'">
-
-                        </figure>
-
-
-                        </figure>
-                        <figure>
-                             <img class="diagram" src="" alt="" onerror="this.style.display='none'">
-
-                        </figure>
-  
-                        <figure>
-                           <img class="diagram" src="" alt="" onerror="this.style.display='none'">
-
-                        </figure>
-
-
-                        </figure>
-                        <figure>
-                             <img class="diagram" src="" alt="" onerror="this.style.display='none'">
-
-                        </figure>
-            </section>
-            <!-- Section 3.3.1 -->
-            <section class="panel" id="section-3-3-1">
-
-                <h2></h2>
-
-                <p>
-                    <ul>
-                        <li>
-
-                            </li>
-                        <li>
-                        </li>
-                        <li>
-                            </li>
-                        <li>
-                        </li>
-                        <b></p>
-            </section>
+            </ul>
+            <h2></h2>
+            <p></p>
             <figure>
-                <a href="" target="_blank" rel="noopener" class="view-btn">Open Video</a>
+                <img class="diagram" src="" alt="" onerror="this.style.display='none'">
 
+                <figcaption></figcaption>
+            </figure>
+            <p></p>
+            <p></p>
+            <figure>
+                <img class="diagram" src="" alt="" onerror="this.style.display='none'">
 
-
+                <figcaption></figcaption>
             </figure>
 
-            <!-- Notice -->
-             <p class="notice"></p>
+            <p></p>
+            <ul>
+                <li></li>
+        
+            </ul>
 
-            <!-- Practice Questions Button -->
-            <div class="lesson-action">
-                <a class="btn" href="questions.html">
+
+
+
+
+            </ul>
+            <p></p>
+            <figure>
+                <img class="diagram" src="" alt="" onerror="this.style.display='none'">
+
+                <figcaption></figcaption>
+            </figure>
+
+        </section>
+
+
+        <!-- Notice -->
+        <p class="notice"></p>
+
+        <!-- Practice Questions Button -->
+        <div class="lesson-action">
+            <a class="btn" href="questions.html">
                 Practice Questions →
             </a>
-            </div>
+        </div>
 
     </main>
 
     <!-- Footer -->
     <footer>
-        <p>G12 Economics Project</p>
+        <p>G12 English Project</p>
     </footer>
 
    

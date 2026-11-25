@@ -5,16 +5,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="theme-color" content="#080f20">
-    <title>Practice Test - G12 Economics</title>
+    <title>Practice Test - G12 English</title>
   
 </head>
 
 <body>
 
     <header class="header">
-        
+     
 
-            <span class="logo-text">MCF <small>Grade 12 Economics</small></span>
+            <span class="logo-text">MCF <small>Grade 12 Biology</small></span>
         </a>
 
         <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false">☰</button>
@@ -24,19 +24,19 @@
             <a href="lesson.html" data-page="lesson.html"> Lesson</a>
             <a href="questions.html" data-page="questions.html"> Questions</a>
             <a href="answer.html" data-page="answer.html">Answer</a>
-            <a href="letters.html" data-page="letters.html"> Letter</a>
+            <a href="letters.html" data-page="letters.html">Letter</a>
             <a href="contacts.html" data-page="contacts.html"> Contact</a>
 
             <div class="dropdown">
                 <button class="drop-btn" id="resourceBtn" aria-expanded="false">
-                    ☷ Resources 
+                    ☷ Resources
                 </button>
 
                 <div class="dropdown-menu" id="resourceMenu">
                     <div class="menu-column">
                         <h3>STUDY</h3>
                         <a href="purpose.html">Project purpose</a>
-                        <a href="lesson.html">Economics lessons</a>
+                        <a href="lesson.html">English lessons</a>
                     </div>
 
                     <div class="menu-column">
@@ -66,35 +66,28 @@
         <section class="panel">
             <h2></h2>
             <p></p>
-            <div id="truefalse"></div>
+            <div id="choose"></div>
         </section>
 
         <!-- SECTION B -->
         <section class="panel">
             <h2></h2>
             <p></p>
-            <div id="blank"></div>
+            <div id="initial"></div>
         </section>
 
         <!-- SECTION C -->
         <section class="panel">
             <h2></h2>
             <p></p>
-            <div id="choose"></div>
-        </section>
-
-        <!-- SECTION D -->
-        <section class="panel">
-            <h2></h2>
-            <p></p>
-            <div id="definitions"></div>
+            <div id="grammar"></div>
         </section>
 
         <!-- RESULT -->
         <div class="panel">
 
             <button class="btn" id="checkAnswers" type="button">
-               
+                
             </button>
 
             <button class="btn" id="clearAnswers" type="button">
@@ -104,7 +97,7 @@
             <h2 id="score" class="score-panel" aria-live="polite"></h2>
 
             <p>
-             
+                
             </p>
 
             <p></p>
@@ -114,10 +107,10 @@
     </main>
 
     <footer>
-        <p>G12 Economics Project | National Digital Award 2026</p>
+        <p>G12 English Project | National Digital Award 2026</p>
     </footer>
 
-   
+    
 
 </body>
 
